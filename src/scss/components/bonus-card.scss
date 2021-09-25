@@ -1,0 +1,207 @@
+.bonus-grid {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	// padding: 0 34px;
+
+	@media (max-width: 767.98px){
+		
+		grid-template-columns: 1fr;
+	}
+}
+
+.bonus-card {
+
+	font-family: $fontRubik;
+	overflow: hidden;
+	border-radius: 26px;
+	background: #222026;
+	color: white;
+	text-decoration: none !important;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 0 0 2px transparent;
+	transition: all $transition;
+
+	&:hover {
+
+		color: white;
+		box-shadow: 0 0 0 2px $colorGold;
+	}
+
+
+	&__image {
+
+		padding-top: 52%;
+		position: relative;
+		z-index: 1;
+		
+		picture,
+		img {
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+
+		padding: 24px;
+	}
+
+	&__date {
+
+		color: #F6C361;
+		font-size: 16px;
+		line-height: 1.25;
+		position: relative;
+
+		padding-left: 16px;
+		margin-bottom: 12px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: calc( 50% - 3px );
+			left: 0;
+			height: 6px;
+			width: 6px;
+			border-radius: 100%;
+			background: #F6C361;
+		}
+	}
+
+	&__title {
+
+		font-size: 21px;
+		line-height: 1.05;
+		font-family: $fontRubik;
+		font-weight: $regular;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&__description {
+
+		font-size: 16px;
+		line-height: 1.25;
+		font-family: $fontRubik;
+		font-weight: $regular;
+	}
+
+}
+
+@media (max-width: 1199.98px){
+
+	.bonus-card {
+
+		padding: 30px 16px 16px;
+
+		&__image {
+
+			width: 180px;
+			height: 180px;
+		}
+
+		&__content {
+
+			gap: 14px;
+		} 
+
+		&__title {
+
+			font-size: 38px;
+		}
+
+		&__subtitle {
+
+			font-size: 32px;
+		}
+	}
+}
+
+@media (max-width: 991.98px){
+
+	.bonus-card {
+
+		padding: 30px 16px 16px;
+
+		&__image {
+
+			width: 150px;
+			height: 150px;
+		}
+
+		&__content {
+
+			gap: 14px;
+		} 
+
+		&__title {
+
+			font-size: 32px;
+		}
+
+		&__subtitle {
+
+			font-size: 26px;
+		}
+	}
+
+}
+
+@media (max-width: 767.98px){
+
+	
+}
+
+@media (max-width: 575.98px){
+
+	
+	
+}
+
+@media (max-width: 480.98px){
+
+
+	
+}
+
+@media (max-width: 374px){
+	
+
+		.bonus-card {
+
+		padding: 30px 16px 16px;
+
+		&__image {
+
+			width: 140px;
+			height: 140px;
+		}
+
+		&__content {
+
+			gap: 14px;
+		} 
+
+		&__title {
+
+			font-size: 28px;
+		}
+
+		&__subtitle {
+
+			font-size: 24px;
+		}
+	}
+}
+
+@media (max-width: 350px){
+	
+}
