@@ -2214,6 +2214,10 @@ table.table--yellow td:last-child {
     margin: 0 5px;
   }
 }
+.logo img {
+  height: inherit;
+}
+
 @media (max-width: 1199.98px) {
   .logo img {
     max-width: 150px;
