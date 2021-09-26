@@ -166,7 +166,7 @@
     text-decoration: none;
 	z-index: 1;
 
-    svg {
+    img {
 		width: 36px;
 		height: 36px;
         transition: transform $transition;
@@ -218,7 +218,7 @@
         color: white;
         text-decoration: none;
 
-        svg {
+        img {
             transform: scale(0.93);
         }
 
@@ -231,7 +231,7 @@
 		width: 170px;
 		height: 170px;
 
-		svg {
+		img {
 
 			height: 64px;
 			width: 64px;
@@ -243,9 +243,8 @@
 @media (max-width: 1199.98px) {
     .button-primary {
         font-size: 18px;
-        height: 46px;
-        padding: 0 48px;
-        width: 182px;
+        height: 56px;
+        padding: 0 42px;
 
         &--large {
             height: 84px;
@@ -255,18 +254,35 @@
     }
 
     .button-play {
-        height: 110px;
-        width: 110px;
-        font-size: 18px;
+        height: 90px;
+        width: 90px;
+
+        img {
+            width: 32px;
+            height: 32px;
+            margin-left: 8px;
+        }
+
+        &--big {
+
+            width: 150px;
+            height: 150px;
+
+            img {
+
+                height: 54px;
+                width: 54px;
+                margin-left: 14px;
+            }
+        }
     }
 }
 
 @media (max-width: 991.98px) {
     .button-primary {
         font-size: 16px;
-        height: 42px;
-        padding: 0 48px;
-        width: auto;
+        height: 52px;
+        padding: 0 38px;
 
         &--large {
             height: 68px;
@@ -274,13 +290,14 @@
             font-size: 26px;
         }
     }
+
 }
 
 @media (max-width: 767.98px) {
     .button-primary {
-        font-size: 14px;
-        height: 38px;
-        padding: 0 36px;
+        font-size: 15px;
+        height: 46px;
+        padding: 0 34px;
 
         &--transparent {
             font-size: 18px !important;
@@ -292,13 +309,24 @@
             font-size: 18px;
         }
     }
+
+    .button-play {
+
+        &::after {
+
+            top: 3px;
+            left: 3px;
+            width: calc(100% - 6px);
+            height: calc(100% - 6px);
+        }
+    }
 }
 
 @media (max-width: 575.98px) {
     .button-primary {
-        font-size: 13px;
-        height: 36px;
-        padding: 0 36px;
+        font-size: 14px;
+        height: 42px;
+        padding: 0 30px;
 
         &--large {
             height: 38px;
@@ -306,14 +334,14 @@
             font-size: 16px;
         }
     }
+    
 }
 
 @media (max-width: 480.98px) {
     .button-primary {
         font-size: 12px;
-        height: 34px;
-        padding: 0 32px;
-        padding-top: 2px;
+        height: 38px;
+        padding: 0 28px;
 
         &--large {
             height: 60px;
@@ -323,21 +351,43 @@
     }
 
     .button-play {
-        height: 94px;
-        width: 94px;
+        height: 80px;
+        width: 80px;
 
-        svg {
-            transform: scale(0.9);
+        img {
+            width: 28px;
+            height: 28px;
+            margin-left: 6px;
+        }
+
+        &::after {
+
+            top: 2px;
+            left: 2px;
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+        }
+
+        &--big {
+
+            width: 120px;
+            height: 120px;
+
+            img {
+
+                height: 44px;
+                width: 44px;
+                margin-left: 12px;
+            }
         }
     }
 }
 
 @media (max-width: 374px) {
     .button-primary {
-        font-size: 10px;
-        line-height: 1;
-        height: 30px;
-        padding: 0 28px;
+        font-size: 11px;
+        height: 34px;
+        padding: 0 26px;
 
         &--large {
             height: 44px;
@@ -351,12 +401,26 @@
     }
 
     .button-play {
-        width: 80px;
-        height: 80px;
-        font-size: 16px;
+        height: 70px;
+        width: 70px;
 
-        svg {
-            transform: scale(0.8);
+        img {
+            width: 24px;
+            height: 24px;
+            margin-left: 6px;
+        }
+
+        &--big {
+
+            width: 100px;
+            height: 100px;
+
+            img {
+
+                height: 38px;
+                width: 38px;
+                margin-left: 10px;
+            }
         }
     }
 }
@@ -371,12 +435,26 @@
     }
 
     .button-play {
-        width: 70px;
-        height: 70px;
-        font-size: 14px;
+        height: 60px;
+        width: 60px;
 
-        svg {
-            transform: scale(0.7);
+        img {
+            width: 20px;
+            height: 20px;
+            margin-left: 6px;
+        }
+
+        &--big {
+
+            width: 80px;
+            height: 80px;
+
+            img {
+
+                height: 32px;
+                width: 32px;
+                margin-left: 8px;
+            }
         }
     }
 }
