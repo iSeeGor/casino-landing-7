@@ -1313,7 +1313,6 @@ table.table--yellow td:last-child {
   text-decoration: none;
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 .button-primary::before, .button-primary::after {
   content: "";
